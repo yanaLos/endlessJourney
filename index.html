@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Endless Journey</title>
+</head>
+<body>
+	<div id='wrapper'>
+		<div id='menu'>
+			Добро пожаловать!
+			<ol>Движение мышью - управление игороком</ol>
+			<ol>Остерегайтесь летящих шаров!</ol>
+			<ol>Стремительные квадраты - ваши друзья :) они повышают ваше здоровье</ol>
+			<ol>Мигающие снаряды помогут расчистить путь!</ol>
+			Удачи! <br> <span>Введите ваше имя</span>
+			<input type="text" id="playerName">
+			<br><a href="javascript:switchToGamePage()">Играть</a> 
+			<br><a href="javascript:switchToResultsPage()">Таблица рекордов</a>
+		</div>
+	</div>
+		
+	<div>
+		<div id='game'>
+			<div id='time'>Time:</div>
+			<div id='score'>Score:</div>
+			<div id='health'>Health:</div>
+			<canvas id='canvas'>
+	  			Обновите браузер
+	  		</canvas>
+	  		<div id='gameEnd'>
+	  			Игра окончена!
+	  			<div id='gameEndRes'></div>
+	  			<br><a href="javascript: switchToMenuPage()">Вернуться в меню</a>
+	  			<br><a href="javascript: switchToResultsPage()">Таблица рекордов</a>
+	  		</div>
+		</div>
+	</div>
+	<div style='display: flex; justify-content: center;'>
+		<div id='table'>
+			Таблица рекордов:
+		  	<div id='resultsTable'>
+			</div>
+			<a href="javascript: switchToMenuPage()">Вернуться в меню</a>
+		</div>
+	</div>
+<script src='http://fe.it-academy.by/JQ/jquery.js'></script>
+<script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="SPAproject.js"></script>
+<script type="text/javascript" src="ajax.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+	padding:0;
+	margin:5;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+	background-color: black;
+}
+#wrapper {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+#menu {
+	margin-top: 50px;
+	color: #ffb3ba;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	width: auto;
+	height: 100%;
+	border: solid 2px;
+	border-color: #ffb3ba;
+	padding: 20px;
+}
+#menu ol {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px;
+}
+
+#menu span{
+	font-size: 14px;
+	padding: 10px;
+}
+#menu a {
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	margin: 20px;
+	background-color: #ffb3ba;
+	padding: 10px;
+	border-radius: 40%;
+}
+#game{
+	position: relative;
+}
+#time{
+	position: absolute;
+	z-index: 100;
+	color: #ffb3ba;
+	font-size: 20px;
+}
+#score{
+	position: absolute;
+	z-index: 100;
+	color: #bae1ff;
+	left: 100px;
+	font-size: 20px;
+}
+#health{
+	position: absolute;
+	z-index: 100;
+	color:#ffffba;
+	left: 200px;
+	font-size: 20px;
+}
+#canvas {
+	cursor: none;
+	position: absolute;
+	transform: translateZ(0);
+ 	will-change: transform;
+}
+#table {
+	margin-top: 30px;
+	color: #ffb3ba;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	width: auto;
+	height: 100%;
+	border: solid 2px;
+	border-color: #ffb3ba;
+	padding: 20px;
+}
+#table ol{
+	color: #ffffff;
+	font-size: 12px;
+	padding: 5px;
+}
+#table a{
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	margin: 5px;
+	background-color: #ffb3ba;
+	padding: 10px;
+	border-radius: 40%;
+}
+#gameEnd {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	top: 100px;
+	left: 20px;
+	width: 200px;
+	height: 200px;
+	z-index: 50;
+	position: absolute;
+
+}
+#gameEnd a{
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	margin: 20px;
+	background-color: #ffb3ba;
+	padding: 10px;
+	border-radius: 40%;
+}
+
